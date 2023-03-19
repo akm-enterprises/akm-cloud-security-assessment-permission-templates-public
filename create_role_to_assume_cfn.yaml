@@ -18,6 +18,7 @@ Parameters:
       ARN of user who is authorised to assume the role that is created by this template.
       E.g., arn:aws:iam::080817114978:role/akm_security_assessment_role
     Type: String
+    Default: arn:aws:iam::080817114978:role/akm_security_assessment_role
   ProwlerRoleName:
     Description: |
       Name of the IAM role that will have these policies attached. Default: ProwlerScanRole

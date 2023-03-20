@@ -11,12 +11,10 @@ This cloudformation can be deployed through AWS console or AWS cli
 
 AWS CLI 
 
-'''sh
-# aws cloudformation create-stack \
-#  --capabilities CAPABILITY_IAM --capabilities CAPABILITY_NAMED_IAM \
-#  --template-body "file://create_role_to_assume_cfn.yaml" \
-#  --stack-name "ProwlerScanRole_for_AKM" \
-#  --parameters "ParameterKey=AuthorisedARN,ParameterValue=arn:aws:iam::080817114978:role/akm_security_assessment_role"
-#
-'''
+aws cloudformation create-stack \
+ --capabilities CAPABILITY_IAM --capabilities CAPABILITY_NAMED_IAM \
+ --template-body "file://create_role_to_assume_cfn.yaml" \
+ --stack-name "ProwlerScanRole_for_AKM" \
+ --parameters "ParameterKey=AuthorisedARN,ParameterValue=arn:aws:iam::080817114978:role/akm_security_assessment_role"
+
 

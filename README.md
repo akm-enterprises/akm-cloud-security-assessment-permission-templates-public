@@ -6,7 +6,8 @@ Templates that create needed IAM Role in an AWS account to be scanned by AKM Ent
 
 ## In order to conduct security assessment of your account, AKM security assessment IAM role need access to your AWS account. 
 
-## This ‘create_role_to_assume_cfn.yaml’ cloudformation template will create the rule and trust AKM AWS account’s security assessment role
+## This ‘create_role_to_assume_cfn.yaml’ cloudformation template will create the role 'ProwlerScanRole" in your account and trust AKM Enterprises AWS account's "akm_security_assessment_role" -role.
+
 This cloudformation can be deployed through AWS console or AWS cli
 
 AWS CLI 
